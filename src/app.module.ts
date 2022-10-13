@@ -1,7 +1,5 @@
 import { Module } from '@nestjs/common';
 import { WineModule } from './modules/wines.module';
-import { WineController } from './controllers/wine.controller';
-import { WineService } from './services/wine.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
