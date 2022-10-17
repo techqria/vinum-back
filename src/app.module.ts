@@ -7,7 +7,7 @@ import { AppService } from './app.service';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://qriatech:Qriatech%402022@cluster0.5sdralz.mongodb.net/VinumWine',
+      '',
     ),
     WineModule,
   ],

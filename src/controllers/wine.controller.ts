@@ -12,6 +12,7 @@ import { WineService } from 'src/services/wine.service';
 
 @Controller('wine')
 export class WineController {
+  userService: any;
   constructor(private readonly wineService: WineService) {}
 
   @Get('/find/:id')
@@ -47,7 +48,7 @@ export class WineController {
     }
   }
 
-  @Put('/update-wine/:id')
+  @Put("/update-wine/:id")
   async updateWine(@Param() params, @Body() wine): Promise<WineDto> {
     try {
       const response = await this.wineService.updateWine(params.id, wine);
@@ -69,3 +70,5 @@ export class WineController {
     }
   }
 }
+
+

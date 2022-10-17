@@ -4,4 +4,5 @@ export class WineDto {
   category: string;
   sale: string;
   description: string;
+  image: string;
 }

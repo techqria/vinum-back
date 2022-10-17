@@ -18,6 +18,9 @@ export class Wine {
 
   @Prop({ required: true, type: String })
   description: string;
+
+  @Prop({ required: true, type: String })
+  image: string;
 }
 
 export const WineSchema = SchemaFactory.createForClass(Wine);
