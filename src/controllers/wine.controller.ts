@@ -37,7 +37,7 @@ export class WineController {
     }
   }
 
-  @Post('')
+  @Post('/createwine')
   async createWine(@Body() wine): Promise<WineDto> {
     try {
       const response = await this.wineService.create(wine);

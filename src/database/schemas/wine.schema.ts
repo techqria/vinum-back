@@ -11,10 +11,31 @@ export class Wine {
   price: string;
 
   @Prop({ required: true, type: String })
+  sale: string;
+
+  @Prop({ required: true, type: String })
   category: string;
 
   @Prop({ required: true, type: String })
-  sale: string;
+  country: string;
+
+  @Prop({ required: true, type: String })
+  region: string;
+
+  @Prop({ required: true, type: String })
+  vol: string;
+
+  @Prop({ required: true, type: String })
+  coloration: string;
+
+  @Prop({ required: true, type: String })
+  grapes: string;
+
+  @Prop({ required: true, type: String })
+  alcohol: string;
+
+  @Prop({ required: true, type: String })
+  year: string;
 
   @Prop({ required: true, type: String })
   description: string;
