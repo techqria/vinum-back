@@ -20,16 +20,7 @@ export class Wine {
   country: string;
 
   @Prop({ required: true, type: String })
-  region: string;
-
-  @Prop({ required: true, type: String })
   vol: string;
-
-  @Prop({ required: true, type: String })
-  coloration: string;
-
-  @Prop({ required: true, type: String })
-  grapes: string;
 
   @Prop({ required: true, type: String })
   alcohol: string;
