@@ -26,6 +26,9 @@ export class Wine {
   alcohol: string;
 
   @Prop({ required: true, type: String })
+  grapes: string;
+
+  @Prop({ required: true, type: String })
   year: string;
 
   @Prop({ required: true, type: String })

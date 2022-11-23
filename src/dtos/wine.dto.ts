@@ -6,6 +6,7 @@ export class WineDto {
   country: string;
   vol: string;
   alcohol: string;
+  grapes: string;
   year: string;
   description: string;
   image: string;
