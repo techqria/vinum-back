@@ -17,7 +17,18 @@ export class UserController {
   @Get('/find/:id')
   async getUser(@Param() params): Promise<UserDto> {
     try {
-      const response = await this.userService.findUser(params.id);
+      const response = await this.userService.findUserById(params.id);
+
+      return response;
+    } catch (error) {
+      return error.message;
+    }
+  }
+
+  @Post('/auth')
+  async getUser(@Body() user): Promise<UserDto> {
+    try {
+      const response = await this.userService.findUser(user);
 
       return response;
     } catch (error) {

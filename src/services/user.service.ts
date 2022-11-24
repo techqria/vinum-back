@@ -13,8 +13,12 @@ export class UserService {
     return newUser.save();
   }
 
-  async findUser(id: string): Promise<UserDto> {
+  async findUserById(id: string): Promise<UserDto> {
     return await this.userModel.findById(id);
+  }
+
+  async findUser(user: UserDto): Promise<UserDto> {
+    return await this.userModel.findOne({username: user.username, password: user.password});
   }
 
   async getAll(): Promise<UserDto[]> {
