@@ -26,7 +26,7 @@ export class UserController {
   }
 
   @Post('/auth')
-  async getUser(@Body() user): Promise<UserDto> {
+  async authenticate(@Body() user): Promise<UserDto> {
     try {
       const response = await this.userService.findUser(user);
 
