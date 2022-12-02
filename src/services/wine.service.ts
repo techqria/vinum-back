@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { Wine, WineDocument } from 'src/database/schemas/wine.schema';
-import { WineDto } from 'src/dtos/wine.dto';
+import { Wine, WineDocument } from '../database/schemas/wine.schema';
+import { WineDto } from '../dtos/wine.dto';
 
 @Injectable()
 export class WineService {

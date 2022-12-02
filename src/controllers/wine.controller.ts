@@ -7,8 +7,8 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
-import { WineDto } from 'src/dtos/wine.dto';
-import { WineService } from 'src/services/wine.service';
+import { WineDto } from '../dtos/wine.dto';
+import { WineService } from '../services/wine.service';
 
 @Controller('wine')
 export class WineController {
