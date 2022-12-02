@@ -8,7 +8,7 @@ async function bootstrap() {
   });
   app.options('/*', (_, res) => {
     res.sendStatus(200);
-});
+  });
   await app.listen(process.env.PORT || 3002);
 }
 bootstrap();
