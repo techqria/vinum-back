@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { WineController } from '../controllers/wine.controller';
-import { Wine, WineSchema } from 'src/database/schemas/wine.schema';
-import { WineService } from 'src/services/wine.service';
+import { Wine, WineSchema } from '../database/schemas/wine.schema';
+import { WineService } from '../services/wine.service';
 
 @Module({
   imports: [
