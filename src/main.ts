@@ -3,7 +3,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.enableCors({origin: "https://vinumeventos.com.br"});
+  app.enableCors({origin: "https://www.vinumeventos.com.br"});
   await app.listen(process.env.PORT || 3002);
 }
 bootstrap();
