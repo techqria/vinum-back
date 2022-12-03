@@ -4,10 +4,9 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const options = {
-    origin: "https://www.vinumeventos.com.br",
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-    preflightContinue: false,
-    optionsSuccessStatus: 204,
+    origin: '*',
+    allowedHeaders: '*',
+    methods: "*",
     credentials: true
   };
   app.enableCors(options);
