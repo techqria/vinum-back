@@ -10,6 +10,6 @@ async function bootstrap() {
     credentials: true
   };
   app.enableCors(options);
-  await app.listen(3000);
+  await app.listen(process.env.PORT || 3002);
 }
 bootstrap();
